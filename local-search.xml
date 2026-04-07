@@ -4,38 +4,56 @@
   
   
   <entry>
-    <title>3.1基于分窗EEG的双路特征融合的阿尔兹海默症分类方法</title>
+    <title>3-1基于分窗EEG的双路特征融合的阿尔兹海默症分类方法</title>
     <link href="/2026/04/07/3-1%E5%9F%BA%E4%BA%8E%E5%88%86%E7%AA%97EEG%E7%9A%84%E5%8F%8C%E8%B7%AF%E7%89%B9%E5%BE%81%E8%9E%8D%E5%90%88%E7%9A%84%E9%98%BF%E5%B0%94%E5%85%B9%E6%B5%B7%E9%BB%98%E7%97%87%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95/"/>
     <url>/2026/04/07/3-1%E5%9F%BA%E4%BA%8E%E5%88%86%E7%AA%97EEG%E7%9A%84%E5%8F%8C%E8%B7%AF%E7%89%B9%E5%BE%81%E8%9E%8D%E5%90%88%E7%9A%84%E9%98%BF%E5%B0%94%E5%85%B9%E6%B5%B7%E9%BB%98%E7%97%87%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95/</url>
     
     <content type="html"><![CDATA[]]></content>
     
     
+    <categories>
+      
+      <category>1.阿尔兹海默症EEG分类研究</category>
+      
+    </categories>
+    
     
   </entry>
   
   
   
   <entry>
-    <title>2.2卷积多层感知机网络做时域EEG的AD分类模型</title>
+    <title>2-2卷积多层感知机网络做时域EEG的AD分类模型</title>
     <link href="/2026/04/07/2-2%E5%8D%B7%E7%A7%AF%E5%A4%9A%E5%B1%82%E6%84%9F%E7%9F%A5%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%81%9A%E6%97%B6%E5%9F%9FEEG%E7%9A%84AD%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/"/>
     <url>/2026/04/07/2-2%E5%8D%B7%E7%A7%AF%E5%A4%9A%E5%B1%82%E6%84%9F%E7%9F%A5%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%81%9A%E6%97%B6%E5%9F%9FEEG%E7%9A%84AD%E5%88%86%E7%B1%BB%E6%A8%A1%E5%9E%8B/</url>
     
     <content type="html"><![CDATA[]]></content>
     
     
+    <categories>
+      
+      <category>1.阿尔兹海默症EEG分类研究</category>
+      
+    </categories>
+    
     
   </entry>
   
   
   
   <entry>
-    <title>2.1时域EEG数据下1D-CNN的算法表现</title>
+    <title>2-1时域EEG数据下1D-CNN的算法表现</title>
     <link href="/2026/04/07/2-1%E6%97%B6%E5%9F%9FEEG%E6%95%B0%E6%8D%AE%E4%B8%8B1D-CNN%E7%9A%84%E7%AE%97%E6%B3%95%E8%A1%A8%E7%8E%B0/"/>
     <url>/2026/04/07/2-1%E6%97%B6%E5%9F%9FEEG%E6%95%B0%E6%8D%AE%E4%B8%8B1D-CNN%E7%9A%84%E7%AE%97%E6%B3%95%E8%A1%A8%E7%8E%B0/</url>
     
     <content type="html"><![CDATA[]]></content>
     
+    
+    <categories>
+      
+      <category>1.阿尔兹海默症EEG分类研究</category>
+      
+    </categories>
     
     
   </entry>
@@ -49,6 +67,12 @@
     
     <content type="html"><![CDATA[<h2 id="研究痛点"><a href="#研究痛点" class="headerlink" title="研究痛点"></a>研究痛点</h2><p>&emsp;&emsp;随着全球老龄化加剧，阿尔茨海默病已成为危害老年人群健康的主要神经退行性疾病。现有临床诊断方式成本高、侵入性强，难以开展大规模早期筛查，而脑电图（EEG）凭借无创、低成本、易普及的特点，成为早期辅助诊断的理想手段。但真实场景下的脑电信号噪声多、个体差异大，传统方法依赖人工设计特征，泛化能力有限；主流深度学习模型则结构复杂、算力要求高、可解释性不足，限制了临床落地。</p><h2 id="数据集"><a href="#数据集" class="headerlink" title="数据集"></a>数据集</h2><p>&emsp;&emsp;这个研究所使用的数据集来源于公开数据集<a href="https://openneuro.org/datasets/ds004504/versions/1.0.8%E3%80%82">https://openneuro.org/datasets/ds004504/versions/1.0.8。</a> 这个数据当中有俩份数据一份是预处理好的数据，一份是原始数据，本文中同时用到了这俩部分数据来验证模型的抗噪性。经过FPSD处理的数据均是经过对单一受试者的脑电信号进行5秒不重叠分窗处理过的。</p><h2 id="FPSD-CNN方法"><a href="#FPSD-CNN方法" class="headerlink" title="FPSD-CNN方法"></a>FPSD-CNN方法</h2><p>&emsp;&emsp;为此，本研究提出一种基于扁平化功率谱密度（FPSD）与轻量级一维卷积神经网络的诊断模型 FPSD‑CNN，整体流程如图 1 所示。该方法通过 Welch 法提取多通道脑电信号的功率谱特征，如图 2 所示；再经过归一化与扁平化处理，形成稳定高效的特征序列，如图 3 所示；最终利用轻量化网络完成端到端分类。模型无需复杂去噪预处理，对噪声具备较强鲁棒性，同时计算量低、推理速度快，适合便携设备部署，模型整体框架如图 4 所示。</p><p><img src="/img/Fig4.jpg" alt="图1 整体流程"></p><p>&emsp;&emsp;对数据进行5秒不重叠分窗后，分别对五个预设的频段进行功率谱密度提取，相关资料可见<a href="https://aursus.github.io/eeg-wavelet.html%E3%80%82%E5%B0%86%E6%97%B6%E5%9F%9F%E4%BF%A1%E5%8F%B7%E6%98%A0%E5%B0%84%E4%B8%BA%E9%A2%91%E5%9F%9F%E7%89%B9%E5%BE%81%E3%80%82%E5%A6%82%E4%B8%8B%E5%9B%BE%E6%89%80%E7%A4%BA%E3%80%82">https://aursus.github.io/eeg-wavelet.html。将时域信号映射为频域特征。如下图所示。</a></p><p><img src="/img/Fig1.png" alt="图2 功率谱特征提取"></p><p>&emsp;&emsp;最后将得到了频域特征通过上述方式进行展平。</p><p><img src="/img/Fig2.png" alt="图3 FPSD扁平化特征"><br><img src="/img/Fig3.png" alt="图4 FPSD-CNN模型结构"></p><h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p>&emsp;&emsp;在公开数据集上的实验结果如图 5 所示，本模型在阿尔茨海默病与健康对照分类任务中准确率达到 88.36%，在健康对照与额颞叶痴呆分类任务中准确率为 82.22%，整体性能优于现有传统机器学习与部分深度学习方法。通过 Grad-CAM 可视化分析（图 6）进一步验证，模型能够自动聚焦与病理相关的脑区特征，而非依赖噪声或伪迹，具备良好的生理可解释性。</p><p><img src="/img/Fig5.png" alt="图5 实验结果对比"><br><img src="/img/Fig8.png" alt="图6 Grad-CAM 可视化"></p><p>&emsp;&emsp;本研究提出的方法在保证高精度的同时，实现了轻量化、强鲁棒性与高可解释性的统一，可为基于 EEG 的阿尔茨海默病早期无创筛查提供高效、可靠的技术方案，也为社区筛查、床边诊断与可穿戴脑电诊断系统提供了坚实的算法支撑。</p><h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>&emsp;&emsp;这个方法是在于转换为频域之后做的一个阿尔兹海默症的分类，在AD-CN和FTD-CN的分类中效果处于中等偏上的水平，虽然有着明显的抗噪性，但对于更困难的AD-FTD任务分类困难。问题可能出在转换为频域后模型只注意到了通过五个预设频段的相对功率，可能这五个相对功率带来的特征并不能有效的区分俩个类别，亦或是俩个类别的特征过于重叠。<br>&emsp;&emsp;所以下一阶段可能需要补充更多特征，如加另一种数据MRI的但介于资源受限，数据难获取的情况。我们更偏向于在原数据上进行进一步工作。理论上最可行的方式可能是补充时域分支来看是否添加了更多的特征信息对分类是否有帮助。但在此之前会单独对时域分支进行验证。</p><h2 id="相关内容"><a href="#相关内容" class="headerlink" title="相关内容"></a>相关内容</h2><p>&emsp;&emsp;本文详细研究已发表于中科院分区SCI 4区期刊：Neural Processing Letters。<br>&emsp;&emsp;论文链接为：已accept，还未见刊</p>]]></content>
     
+    
+    <categories>
+      
+      <category>1.阿尔兹海默症EEG分类研究</category>
+      
+    </categories>
     
     
     <tags>
@@ -68,12 +92,18 @@
   
   
   <entry>
-    <title>1.1频域EEG数据下WT-SVM的AD分类算法表现</title>
+    <title>1-1频域EEG数据下WT-SVM的AD分类算法表现</title>
     <link href="/2026/04/06/1-1%E9%A2%91%E5%9F%9FEEG%E6%95%B0%E6%8D%AE%E4%B8%8BWT-SVM%E7%9A%84AD%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95%E8%A1%A8%E7%8E%B0/"/>
     <url>/2026/04/06/1-1%E9%A2%91%E5%9F%9FEEG%E6%95%B0%E6%8D%AE%E4%B8%8BWT-SVM%E7%9A%84AD%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95%E8%A1%A8%E7%8E%B0/</url>
     
     <content type="html"><![CDATA[]]></content>
     
+    
+    <categories>
+      
+      <category>1.阿尔兹海默症EEG分类研究</category>
+      
+    </categories>
     
     
   </entry>
@@ -87,6 +117,12 @@
     
     <content type="html"><![CDATA[<p>这里有我在实验室里面认为的一些比较有用的资料和一些常见Hexo相关指令。感兴趣的实验室的朋友们可以从这里开始看，0章节是按需求进行更新。本人太懒了望理解QAQ。后文介绍了其他章节的内容，0-xxx~3-xxx是我本科期间的一些针对EEG的研究历程，也是一个研究思路走向。希望对大家有帮助。后续会对章节进行进一步的调整。</p><h2 id="章节介绍："><a href="#章节介绍：" class="headerlink" title="章节介绍："></a>章节介绍：</h2><p>本文主要介绍一些零碎的工具和资料，这部分主要做一个博客导航。<br>0-xxx：入门工具安装和资料<br>1-xxx：基于频域EEG的相关算法研究<br>2-xxx：基于时域EEG的相关算法研究<br>3-xxx：基于分窗EEG的双路特征融合的阿尔兹海默症分类方法。</p><h2 id="脑电基础知识快速入门资料："><a href="#脑电基础知识快速入门资料：" class="headerlink" title="脑电基础知识快速入门资料："></a>脑电基础知识快速入门资料：</h2><p><a href="https://aursus.github.io/eeg-preprocessing.html">https://aursus.github.io/eeg-preprocessing.html</a></p><h2 id="电子书："><a href="#电子书：" class="headerlink" title="电子书："></a>电子书：</h2><p>最近很懒还没有整理QAQ</p><h2 id="Hexo-Quick-Start"><a href="#Hexo-Quick-Start" class="headerlink" title="Hexo Quick Start"></a>Hexo Quick Start</h2><p>新建文章</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>运行服务器</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>生成静态文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>部署到远程站点</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>]]></content>
     
+    
+    <categories>
+      
+      <category>1.阿尔兹海默症EEG分类研究</category>
+      
+    </categories>
     
     
     <tags>
