@@ -30,19 +30,6 @@
   
   
   <entry>
-    <title>1.1频域EEG数据下WT-SVM的AD分类算法表现</title>
-    <link href="/2026/04/07/1-1%E9%A2%91%E5%9F%9FEEG%E6%95%B0%E6%8D%AE%E4%B8%8BWT-SVM%E7%9A%84AD%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95%E8%A1%A8%E7%8E%B0/"/>
-    <url>/2026/04/07/1-1%E9%A2%91%E5%9F%9FEEG%E6%95%B0%E6%8D%AE%E4%B8%8BWT-SVM%E7%9A%84AD%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95%E8%A1%A8%E7%8E%B0/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>1-2基于FPSD-CNN的阿尔兹海默症分类</title>
     <link href="/2026/04/06/1-2%E5%9F%BA%E4%BA%8EFPSD-CNN%E7%9A%84%E9%98%BF%E5%B0%94%E5%85%B9%E6%B5%B7%E9%BB%98%E7%97%87%E5%88%86%E7%B1%BB/"/>
     <url>/2026/04/06/1-2%E5%9F%BA%E4%BA%8EFPSD-CNN%E7%9A%84%E9%98%BF%E5%B0%94%E5%85%B9%E6%B5%B7%E9%BB%98%E7%97%87%E5%88%86%E7%B1%BB/</url>
@@ -62,6 +49,19 @@
       <tag>机器学习</tag>
       
     </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>1.1频域EEG数据下WT-SVM的AD分类算法表现</title>
+    <link href="/2026/04/06/1-1%E9%A2%91%E5%9F%9FEEG%E6%95%B0%E6%8D%AE%E4%B8%8BWT-SVM%E7%9A%84AD%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95%E8%A1%A8%E7%8E%B0/"/>
+    <url>/2026/04/06/1-1%E9%A2%91%E5%9F%9FEEG%E6%95%B0%E6%8D%AE%E4%B8%8BWT-SVM%E7%9A%84AD%E5%88%86%E7%B1%BB%E7%AE%97%E6%B3%95%E8%A1%A8%E7%8E%B0/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
     
   </entry>
   
