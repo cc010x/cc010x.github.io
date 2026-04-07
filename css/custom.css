@@ -1,0 +1,19 @@
+/* 导航栏左侧圆形头像 */
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-brand::before {
+  content: "";
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-image: url(/img/avatar.png);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
